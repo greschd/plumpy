@@ -12,4 +12,4 @@ singledispatch==3.4.0.3
 six==1.11.0
 tornado==4.5.3
 typing==3.6.4
-kiwipy==0.2.1
+git://github.com/muhrin/kiwipy.git8c27f94f8b2e346641e7bbed7ec31c40a04f5857#egg

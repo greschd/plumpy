@@ -61,5 +61,8 @@ setup(
         ]
     },
     packages=['plumpy', 'plumpy/base'],
+    dependency_links=[
+        'https://github.com/muhrin/kiwipy/archive/8c27f94f8b2e346641e7bbed7ec31c40a04f5857.zip#egg=kiwipy-0.3.0b1'
+    ],
     test_suite='test'
 )
