@@ -74,6 +74,12 @@ class CommunicatorWrapper(kiwipy.Communicator):
         self._loop = loop or ioloop.IOLoop.current()
         self._subscribers = {}
 
+    def start(self):
+        self._communicator.start()
+
+    def stop(self):
+        self._communicator.stop()
+
     def add_rpc_subscriber(self, subscriber, identifier):
         converted = convert_to_comm(self._communicator, self._loop, subscriber)
         self._communicator.add_rpc_subscriber(converted, identifier)
